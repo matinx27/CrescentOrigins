@@ -172,6 +172,10 @@ h1 {
   padding: 2.5rem 0 4.5rem;
 }
 
+.review-section {
+  padding: 0 0 4.5rem;
+}
+
 h2 {
   margin: 0;
   font-size: clamp(1.6rem, 3vw, 2rem);
@@ -254,6 +258,31 @@ h2 {
   margin-top: 0.32rem;
 }
 
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.review-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 24px rgba(86, 52, 26, 0.08);
+}
+
+.review-text {
+  margin: 0;
+  color: var(--text-main);
+}
+
+.review-author {
+  margin: 0.85rem 0 0;
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
 .site-footer {
   border-top: 1px solid rgba(114, 72, 39, 0.2);
   padding: 1.2rem 0;
@@ -282,5 +311,9 @@ h2 {
   .bottle {
     min-height: 340px;
     width: min(280px, 70%);
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
   }
 }
