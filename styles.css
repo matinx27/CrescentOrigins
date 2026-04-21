@@ -20,6 +20,8 @@ body {
   background: linear-gradient(160deg, #fbf6ee 0%, var(--bg-main) 55%, #f6e6d2 100%);
   color: var(--text-main);
   line-height: 1.6;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .container {
@@ -170,6 +172,9 @@ h1 {
 
 .slide-section {
   padding: 2.5rem 0 4.5rem;
+  height: auto;
+  max-height: none;
+  overflow: visible;
 }
 
 h2 {
